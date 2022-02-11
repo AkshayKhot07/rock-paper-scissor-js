@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Festive&family=Moo+Lah+Lah&family=Roboto:wght@100&family=Rock+Salt&family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.header-desc > h1 {
+  font-family: "VT323", monospace;
+  font-size: 70px;
+  padding: 20px;
+}
+
+.header-desc > p {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.main-desc > h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#match-display {
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+#score-track {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(0, 183, 255);
+}
+
+#play-icons {
+  display: flex;
+  gap: 20px;
+}
+
+#play-icons > button {
+  width: 150px;
+  height: 150px;
+}
+
+.question-mark {
+  margin: 10px 0px;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+}
+
+.active {
+  display: block;
+}
+
+dialog {
+  z-index: 2;
+  position: fixed;
+  top: 30%;
+  left: 42%;
+  padding: 30px 90px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.play-again {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.primary-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.morty-image {
+  margin-left: 20px;
+}
+
+.rick-image {
+  margin-right: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Background CSS */
+
+.primary-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(7, 6, 20);
+  background: linear-gradient(
+    5deg,
+    rgba(7, 6, 20, 1) 5%,
+    rgba(16, 25, 60, 1) 35%,
+    rgba(10, 75, 59, 1) 50%,
+    rgba(16, 25, 60, 1) 65%,
+    rgba(7, 6, 20, 1) 95%
+  );
+  overflow: hidden;
+  z-index: 0;
+}

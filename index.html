@@ -5,9 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Rock, Paper & Scissor</title>
+    <title>Mongoose, Snake & Hyena</title>
   </head>
   <body>
+    <div class="primary-container">
+      <div class="morty-image">
+        <img
+          src="./images/mortyrps.png"
+          alt="Morty our human"
+          width="150px"
+          height="500px"
+        />
+      </div>
+      <div class="main-container">
+        <div class="header-desc">
+          <h1>Mongoose Snake Hyena</h1>
+          <p class="desc">Morty is human, Rick is computer</p>
+          <p class="desc beats">
+            Mongoose beats Snake | Snake beats Hyena | Hyena beats Mongoose
+          </p>
+        </div>
+        <div class="main-desc">
+          <h2 id="result-display">Choose your sacrifice</h2>
+          <p id="match-display">First who does 5 kills, Wins!</p>
+          <div class="question-mark">
+            <img
+              class="morty-choice"
+              src="./images/questionmark1.png"
+              alt="inital stage of the game"
+              height="100px"
+              width="100px"
+            />
+            <img
+              class="rick-choice"
+              src="./images/questionmark1.png"
+              alt="inital stage of the game"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <div id="score-track">
+            Morty : <span id="morty-score">0</span> Rick :
+            <span id="rick-score">0</span>
+          </div>
+          <div id="play-icons">
+            <button id="play-mongoose">
+              <img
+                src="./images/mongoose.png"
+                alt="Plays Mongoose"
+                height="130px"
+                width="130px"
+              />
+            </button>
+            <button id="play-snake">
+              <img
+                src="./images/snake.png"
+                alt="Plays Snake"
+                height="130px"
+                width="130px"
+              />
+            </button>
+            <button id="play-hyena">
+              <img
+                src="./images/hyena.png"
+                alt="Plays Hyena"
+                height="130px"
+                width="130px"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="rick-image">
+        <img
+          src="./images/rickrps.png"
+          alt="Rick our computer"
+          width="200px"
+          height="500px"
+        />
+      </div>
+    </div>
+    <dialog id="favDialog">
+      <form method="dialog">
+        <h2 class="result-text"></h2>
+        <button class="play-again">Play Again</button>
+      </form>
+    </dialog>
+    <div class="overlay"></div>
     <script src="./script.js"></script>
   </body>
 </html>
